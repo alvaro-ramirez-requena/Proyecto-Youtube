@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de video</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/icons/style.css">
+</head>
+
+<body class="video-page scroll">
+    <header class="main-header">
+        <!-- Left -->
+        <div class="start place-center">
+            <button class="icon-menu action-button "></button>
+            <a href="/">
+                <img class="logo" src="/icons/logo (1).svg" alt="">
+            </a>
+        </div>
+        <!-- Center -->
+        <div class="middle place-center">
+            <form class="form-search place-center" action="#">
+                <input type="search" placeholder="Buscar" class="input">
+                <button data-tooltip="Buscar" class="submit icon-search"></button>
+            </form>
+            <button data-tooltip="Haz busquedas por voz" class="icon-microphone action-button"></button>
+        </div>
+        <!-- Right -->
+        <div class="place-center buttons-container">
+            <button data-tooltip="Crear" class="icon-camera action-button"></button>
+            <button data-tooltip="Aplicaciones de Youtube" class="icon-grid action-button"></button>
+            <button data-tooltip="Notificaciones" class="icon-bell action-button"></button>
+            <div class="user">
+                <div class="user-avatar">
+                    <img class="image" src="https://i.pinimg.com/550x/1a/cf/be/1acfbed37e572c5d498cc14b8edce182.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="video-page-grid">
+        <main class="video-column">
+            <section class="video-player">
+                <iframe class="video" src="https://www.youtube.com/embed/fFUyOYEQd4A?si=d4_FZprTLrGIGsXF"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h1 class="title">Por que windows 11 es un problema para apple</h1>
+
+                <div class="actions">
+                    <p class="video-information">
+                        <span class="views">100.000 visualizaciones</span>
+                        <span>29 jun 2025</span>
+                    </p>
+                    <div class="buttons-container">
+                        <div class="buttons-container likes">
+                            <button data-tooltip="Me gusta este video" class="action-button has-text">
+                                <span class="icon icon-like-video"></span>
+                                <span>18.000</span>
+                            </button>
+                            <button data-tooltip="No me gusta este video" class="action-button has-text">
+                                <span class="icon icon-dislike-video"></span>
+                                <span>500</span>
+                            </button>
+                        </div>
+                        <button data-tooltip="Guardar" class="action-button has-text">
+                            <span class="icon icon-share"></span>
+                            <span>Compartir</span>
+                        </button>
+                        <button data-tooltip="Me gusta este video" class="action-button has-text">
+                            <span class="icon icon-add-list"></span>
+                            <span>Guardar</span>
+                        </button>
+                        <button class="action-button icon icon-horizontal-dots">
+
+                        </button>
+                    </div>
+
+                </div>
+
+                <hr class="border" />
+            </section>
+            <section class="video-player-information flex">
+                <div class="user-avatar">
+                    <img class="image" src="https://i.pinimg.com/550x/1a/cf/be/1acfbed37e572c5d498cc14b8edce182.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <header class="header flex">
+                        <div>
+                            <a href="#" class="channel-name" data-tooltip="canal">Alvaro</a>
+                            <p class="subs-count">484.000 subscriptores</p>
+                        </div>
+                        <button class="button">Subscribirme</button>
+                    </header>
+                    <div class="caption">
+                        <p class="caption rows-text-3">
+                            Watch and enjoy the audition sessions for the the three young stars (Jonah Hill, Michael
+                            Cera
+                            and Christopher Mintz-Plasse) on the classic Superbad, written by Seth Rogen and Evan
+                            Goldberg
+                            when they were only 13.
+
+                            Please like and subscribe for many more great videos!
+
+                            All rights reserved.</p>
+                        <button class="action-button has-text">
+                            <span>Mostrar mas</span>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+
+            <hr class="big" />
+            <section class="comment-section">
+                <header class="comments-information buttons-container">
+                    <p>150 comentarios</p>
+                    <button class="action-button has-text">
+                        <span class="icon icon-filter"></span>
+                        <span>ordenar por</span>
+                    </button>
+                </header>
+                <div class="comment-form flex">
+                    <div class="user-avatar">
+                        <img class="image" src="https://i.pinimg.com/550x/1a/cf/be/1acfbed37e572c5d498cc14b8edce182.jpg"
+                            alt="">
+                    </div>
+                    <div class="form">
+                        <div class="input" contenteditable></div>
+                        <div class="buttons-container">
+                            <button class="button link">Cancelar</button>
+                            <button class="button" disabled>Comentar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comments-grid" id="comments-grid">
+                    <!-- Aqui se renderizan los comentarios -->
+
+                    <!-- <article class="comment flex">
+                        <div class="user-avatar">
+                            <img class="image"
+                                src="https://i.pinimg.com/550x/1a/cf/be/1acfbed37e572c5d498cc14b8edce182.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <header class="header">
+                                <a href="#" class="name"><b>Alvaro Ramirez</b></a>
+                                <time class="time">Hace 1 semana</time>
+                            </header>
+                            <p class="text rows-text-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+                                odit, nam aliquid debitis porro neque omnis quaerat magnam ea sed officiis eius
+                                totam dolorum, beatae ex ullam error laborum quisquam! </p>
+                            <footer class="buttons-container">
+                                <button class="action-button has-text" data-tooltip="Me gusta">
+                                    <span class="icon icon-like-video"></span>
+                                    <span class="text">10</span>
+                                </button>
+
+                                <button class="action-button has-text" data-tooltip="No me gusta">
+                                    <span class="icon icon-dislike-video"></span>
+                                </button>
+                                <button class="action-button has-text">
+                                    <span class="text">Responder</span>
+                                </button>
+                            </footer>
+                        </div>
+                    </article> -->
+                </div>
+            </section>
+
+        </main>
+        <aside class="cards-sidebar" id="card-grid">
+            <!-- Aqui se renderizan los videos recomendados -->
+
+            <!-- <article class="card-video in-sidebar">
+
+                <a href="#" class="cover">
+                    <img class="image"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg/220px-Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+                        alt="Poster del video">
+                    <time class="time">5:50</time>
+                </a>
+                <div class="content">
+                    <h3 class="title rows-text-2">
+                        <a href="/video.html">Este es el titulo de mi video</a>
+                    </h3>
+                    <a href="#">Alvaro</a>
+                    <p class="video-information">
+                        <span class="views">100.000 visualizaciones</span>
+                        <span>Hace 2 semanas</span>
+                    </p>
+                </div>
+
+            </article> -->
+        </aside>
+    </div>
+
+    <script src="/js/scripts/comment.js" type="module"></script>
+    <script src="/js/scripts/cards.js" type="module"></script>
+</body>
+
+</html>
