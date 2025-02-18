@@ -1,5 +1,5 @@
 export const cardVideo = (data) => `
-    <a href="./video.html"
+    <a href="video.html"
     class="cover">
     <img class="image"
       src=${data.cover}>
