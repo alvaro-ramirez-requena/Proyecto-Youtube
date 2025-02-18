@@ -3,7 +3,7 @@ export const commentTemplate = (data) => `
     <img
         class="image"
         src=${data.avatar}
-        alt="Avatar de usuario"
+        alt="Avatar de usuarioo"
     >
   </div>
   <div class="content">
